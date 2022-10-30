@@ -1,0 +1,182 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <meta charset="UTF-8">
+        <title>Yummy</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="image/logo.png" >
+         
+        
+    </head>
+    <body>
+        <!-- loadingScreen -->
+
+        <div id="load" class="d-flex justify-content-center align-items-center">
+            <div class="sk-chase">
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+              </div>
+        </div>
+
+        <!-- navbar -->
+        <section class="home bg-danger">
+        
+            <div class="menu bg-body">
+                <img src="image/logo.png" alt="">
+                <i  class="fa-solid fa-bars menu-bar"></i>
+                <div class=" fixed-icon d-flex align-items-center flex-column ">
+                <i class="fa-solid fa-globe"></i>
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+                
+            </div>
+            <section class="pt-4 nav-bar" id="nav-bar">
+            
+            
+                    <nav>
+                        <ul class="list">
+                            <li class="link1" ><a href="#search" class="searchLink">search</a></li>
+
+                            <li class="link2"><a href="#showDiv" class="catlink">Categories</a></li>
+
+                            <li class="link3"><a href="#showDiv2" class="areaLink">area</a></li>
+
+                            <li class="link4"><a href="#showDiv3" class="ingLink">Ingredients</a></li>
+
+                            <li class="link5 "><a href="#contactsUs" class="contactLink">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                    <div class="icons">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-solid fa-globe"></i>
+                        <p class=" mt-2">Copyright Â© 2019 All Rights Reserved.</p>
+                    </div>
+                
+                
+            </section>
+            
+        </section>
+
+        <!-- content of dataShow -->
+
+        <section class="data-content mt-3 mb-4 ">
+            <div class="container pt-5   ">
+
+                <!-- searchhhhhhhhhh -->
+
+                <div class="search mt-3 p-4 d-none" id="search">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input id="searchByName" class="form-control " type="text" placeholder="Search By Name">
+                        </div>
+                        <div class="col-md-6">
+                            <input  id="searchByLetter" class="form-control" maxlength="1" type="text" placeholder="Search By First Letter">
+                        </div>
+                    </div>
+
+                </div>
+                 <!-- shown data -->
+
+                <div class="row g-4 mt-3 p-4 d-none " id="showDiv">  
+                   
+                </div>
+
+                <div class="row row d-none mt-3 p-4  g-4" id="showDiv2">
+                </div>
+                <div class="row row2  g-4 mt-3 p-4" id="showDiv3">
+                    <div class="col-md-3 shadow">
+                        
+                        </div> 
+                </div>
+                
+                <!-- contactttttttt -->
+
+                <div class="contact p-4 mt-3 d-none" id="contactsUs">
+                    
+
+                    <div class="row gx-4">
+
+                        <div class="text-center mb-3 text-white">
+                            <h2>contactUs...</h2>
+                        </div>
+                        <div class="col-md-6">
+                            <input id="nameInput" type="text" class=" form-control" placeholder="enter your name">
+                        </div>
+                        <div class="col-md-6">
+                            <input id="emailInput" type="text" class="form-control" placeholder="enter email">
+                        </div>
+                        <div class="col-md-6 ">
+                            <div class="validName valid">
+                                <p>Special Characters and Numbers not allowed</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6  ">
+                            <div class="validEmail valid">
+                                <p>Enter valid email. *Ex: xxx@yyy.zzz</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <input id="phoneInput" type="" class="form-control" placeholder="enter phone">
+                        </div>
+                        <div class="col-md-6">
+                            <input id="ageInput" type="" class=" form-control" placeholder="enter age">
+                        </div>
+                        <div class="col-md-6  ">
+                            <div class="validPhone valid">
+                                <p>Enter valid Phone Number</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6  ">
+                            <div class="validAge valid">
+                                <p>Enter valid Age</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <input id="passwordInput" type="password" class="form-control" placeholder="enter password">
+                        </div>
+                        <div class="col-md-6">
+                            <input id="rePasswordInput" type="password" class="form-control" placeholder="enter rePassword">
+                        </div>
+                        <div class="col-md-6  ">
+                            <div class="validpassword valid">
+                                <p>Enter valid password *Minimum eight characters, at least one letter and one number:*</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6  ">
+                            <div class="validrepassword valid">
+                                <p>Enter valid Repassword</p>
+                            </div>
+                        </div>
+                        <div class="text-center mt-2">
+                            <button id="submitBtn" disabled  class="btn btn-outline-danger ">Submit</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row d-none row3 mt-3 g-5 text-white" id="showDiv4">
+                    
+                </div>
+
+               
+
+
+            </div>
+
+        </section>
+      
+
+    
+        
+    
+        <script src="js/bootstrap.bundle.js"></script>
+        <script src="js/jquery-3.6.1.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
